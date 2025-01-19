@@ -66,3 +66,27 @@ b = 0
 - Result
 
 1000 = 8
+
+
+## Multiplier
+
+Init:
+a = 5 (101)
+b = 3 (011)
+result = 0
+
+First iteration:
+- b & 1 = 011 & 001 = 1 (last bit is 1)
+- result = 0 + 101 = 101
+- a = 101 << 1 = 1010
+- b = 011 >> 1 = 001
+
+Second iteration:
+- b & 1 = 001 & 001 = 1 (last bit is1)
+- result = 101 + 1010 = 1111
+- a = 1010 << 1 = 10100
+- b = 001 >> 1 = 000
+
+Third iteration:
+- b is 0, finish
+- result = 1111 (15)

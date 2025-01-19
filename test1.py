@@ -35,6 +35,7 @@ def test_multiplier():
         (7, 7, 49),
         (15, 3, 45),
         (1, 100, 100),
+        (25, 25, 625)
     ]
     
     for a, b, expected in test_cases:
@@ -49,7 +50,6 @@ def test_gray_code():
     """
     Tests the gray_code conversion function with various inputs
     """
-    # List of test cases: (input, expected_gray_code)
     test_cases = [
         (0, 0),   # 0 -> 0
         (1, 1),   # 1 -> 1
