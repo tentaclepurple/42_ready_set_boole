@@ -4,7 +4,7 @@ from space_filling_curve import ft_map, ft_reverse_map
 if __name__ == "__main__":
 
     try:
-        x = 1210
+        x = 10
         y = 14
 
         float_value = ft_map(x, y)
