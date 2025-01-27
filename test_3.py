@@ -7,12 +7,16 @@ def test_boolean_anytree():
     test_cases = [
         # Simple AND: 1 AND 0
         "10&",
-        
+
+        "10|",
+        "10>",
+        "10=",
         # Complex formula: 1 AND (0 OR 1)
         "101|&",
         
         # More complex formula: (1 OR 0) AND (1 OR 1)
-        "10|11|&"
+        "10|11|&",
+        "1011||="
     ]
     
     print("Testing Boolean Evaluation with anytree:")
